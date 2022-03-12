@@ -19,6 +19,12 @@ body {
     margin-left: -20px;
     padding-left: 20px;
   }
+
+  #clock {
+    font-size: 40px;
+    font-weight: bold;
+    color: lightblue;
+  }
   
   #todo-form {
     margin-top: 200px;
