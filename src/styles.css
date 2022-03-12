@@ -1,5 +1,6 @@
 body {
-    background-size: 0 0;
+    background-size: auto;
+    background-repeat: no-repeat;
     font-family: sans-serif;
     text-align: center;
   }
