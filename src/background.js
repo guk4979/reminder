@@ -1,7 +1,12 @@
-const images = ["src/img/0.jpg", "src/img/1.jpg", "src/img/2.jpg"];
+const horizontalImgaes = ["src/img/0.jpg", "src/img/1.jpg", "src/img/2.jpg"];
+const verticalImages = ["src/img/castle.jpg","src/img/eiffel_tower1.jpg","src/img/eiffel_tower2.jpg"];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+const chosenHorizontalImage = horizontalImgaes[Math.floor(Math.random() * horizontalImgaes.length)];
+const chosenVerticalImage = verticalImages[Math.floor(Math.random()* verticalImages.length)];
 
-document.body.style.backgroundImage = `url(${chosenImage})`;
-
-console.log(document.body.style);
+if (window.innerWidth() <= 1500 && window.innerHeight() <= 3100){
+    document.body.style.backgroundImage = `url(${chosenVerticalImage})`;
+}
+else {
+    document.body.style.backgroundImage = `url(${chosenHorizontalImage})`;
+}
