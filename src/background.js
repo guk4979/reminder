@@ -12,7 +12,7 @@ function setBackground(){
     console.log(`x: ${windowWidth}`);
     console.log(`y: ${windowHeight}`);
 
-    if (window.outerWidth() <= 520 && window.outerHeight() <= 800){
+    if (windowWidth <= 520 && windowHeight <= 800){
         document.body.style.backgroundImage = `url(${chosenVerticalImage})`;
     }
     else {
