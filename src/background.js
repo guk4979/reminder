@@ -9,8 +9,6 @@ const chosenVerticalImage = verticalImages[Math.floor(Math.random()* verticalIma
 function setBackground(){
     let windowHeight = window.outerHeight;
     let windowWidth = window.outerWidth;
-    console.log(`x: ${windowWidth}`);
-    console.log(`y: ${windowHeight}`);
 
     if (windowWidth <= 520 && windowHeight <= 800){
         document.body.style.backgroundImage = `url(${chosenVerticalImage})`;
