@@ -18,4 +18,4 @@ function setBackground(){
     }
 }
 
-setInterval(setBackground, 1000);
+setInterval(setBackground, 100);
