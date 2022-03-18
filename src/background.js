@@ -4,9 +4,15 @@ const verticalImages = ["src/img/castle.jpg","src/img/eiffel_tower1.jpg","src/im
 const chosenHorizontalImage = horizontalImgaes[Math.floor(Math.random() * horizontalImgaes.length)];
 const chosenVerticalImage = verticalImages[Math.floor(Math.random()* verticalImages.length)];
 
-if (window.innerWidth() <= 1500 && window.innerHeight() <= 3100){
-    document.body.style.backgroundImage = `url(${chosenVerticalImage})`;
-}
-else {
-    document.body.style.backgroundImage = `url(${chosenHorizontalImage})`;
-}
+// if (window.innerWidth() <= 1500 && window.innerHeight() <= 3100){
+//     document.body.style.backgroundImage = `url(${chosenVerticalImage})`;
+// }
+// else {
+//     document.body.style.backgroundImage = `url(${chosenHorizontalImage})`;
+// }
+
+
+document.body.style.backgroundImage = `url(${chosenHorizontalImage})`;
+
+
+console.log(document.body.style);
