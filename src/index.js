@@ -10,7 +10,7 @@ const USERNAME_KEY = "username";
 function onLoginSubmission(event) {
   event.preventDefault();
   const username = loginInput.value;
-  localStorage.setItem(USERNAME_KEY, username);
+  // localStorage.setItem(USERNAME_KEY, username);
   greeting.innerText = `Hello ${username}`;
   todoForm.classList.remove(HIDDEN_CLASSNAME);
   todoList.classList.remove(HIDDEN_CLASSNAME);

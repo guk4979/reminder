@@ -11,6 +11,7 @@ function paintToDo(newTodo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   const button = document.createElement("button");
+  // li.classList.add("list-group-item");
   li.appendChild(span);
   li.appendChild(button);
   button.innerText = "❌";
@@ -27,3 +28,4 @@ function handleTodoSubmit(event) {
 }
 
 toDoForm.addEventListener("submit", handleTodoSubmit);
+ 
