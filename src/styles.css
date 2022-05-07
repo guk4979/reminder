@@ -24,8 +24,8 @@ ul {
 }
 
 #list {
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .hidden {
@@ -38,4 +38,9 @@ form.container{
 
 div.container{
   display: flexbox;
+}
+
+.form-control{
+  padding:2px;
+  display: inline;
 }

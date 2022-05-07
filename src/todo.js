@@ -11,10 +11,10 @@ function paintToDo(newTodo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   const button = document.createElement("button");
-  // li.classList.add("list-group-item");
+  li.classList.add("list-group-item");
   li.appendChild(span);
   li.appendChild(button);
-  button.innerText = "❌";
+  button.classList.add("btn-close");
   span.innerText = newTodo;
   toDoList.appendChild(li);
   button.addEventListener("click", deleteToDoList);
